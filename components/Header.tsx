@@ -20,7 +20,7 @@ export default function Header() {
     { name: "Conócenos", href: "/" },
     { name: "Servicios", href: "/servicios" },
     { name: "Contacto", href: "/contacto" },
-    { name: "Blog", href: "https://www.parsafathi.com/blog", external: true },
+    { name: "Blog", href: "https://abogados-parsafathi.blogspot.com/", external: true },
   ];
 
   return (

@@ -18,7 +18,7 @@ export default function BlogPage() {
             Publicamos regularmente artículos de interés, análisis de sentencias y consejos legales prácticos para ayudarle a entender mejor el marco jurídico actual.
           </p>
           <a 
-            href="https://www.parsafathi.com/blog" 
+            href="https://abogados-parsafathi.blogspot.com/" 
             target="_blank"
             className="inline-block px-12 py-5 bg-legal-gold text-legal-black font-bold uppercase tracking-widest hover:bg-legal-gold-hover transition-all"
           >

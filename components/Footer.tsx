@@ -38,7 +38,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-legal-gold transition-colors">Conócenos</Link></li>
               <li><Link href="/servicios" className="hover:text-legal-gold transition-colors">Servicios</Link></li>
               <li><Link href="/contacto" className="hover:text-legal-gold transition-colors">Contacto</Link></li>
-              <li><a href="https://www.parsafathi.com/blog" target="_blank" className="hover:text-legal-gold transition-colors">Blog Jurídico</a></li>
+              <li><a href="https://abogados-parsafathi.blogspot.com/" target="_blank" className="hover:text-legal-gold transition-colors">Blog Jurídico</a></li>
             </ul>
           </div>
 
