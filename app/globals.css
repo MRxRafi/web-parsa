@@ -1,26 +1,65 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0A0A0A;
+  --foreground: #F8FAFC;
+  
+  --legal-black: #0A0A0A;
+  --legal-navy: #0F172A;
+  --legal-charcoal: #121212;
+  --legal-dark-gray: #1E1E1E;
+  --legal-gold: #C5A059;
+  --legal-gold-hover: #B38E46;
+  --legal-light: #F8FAFC;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  
+  --color-legal-black: var(--legal-black);
+  --color-legal-navy: var(--legal-navy);
+  --color-legal-charcoal: var(--legal-charcoal);
+  --color-legal-dark-gray: var(--legal-dark-gray);
+  --color-legal-gold: var(--legal-gold);
+  --color-legal-gold-hover: var(--legal-gold-hover);
+  --color-legal-light: var(--legal-light);
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-playfair), serif;
+}
+
+/* Custom Utilities from Stitch */
+.section-padding {
+  padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+}
+
+.hover-gold-border {
+  transition: border-color 0.3s ease;
+}
+
+.hover-gold-border:hover {
+  border-color: #C5A059;
+}
+
+.bg-mesh {
+    background-color: #0A0A0A;
+    background-image: radial-gradient(at 0% 0%, rgba(197, 160, 89, 0.05) 0, transparent 50%), radial-gradient(at 50% 0%, rgba(30, 41, 59, 0.3) 0, transparent 50%);
 }
